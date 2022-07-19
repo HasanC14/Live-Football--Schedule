@@ -1,3 +1,188 @@
 body {
     font-family: 'Roboto Condensed', sans-serif;
+    margin: 0;
+}
+
+.main-body {
+    margin: 5% 15%;
+}
+
+/* Header Section */
+.container1 {
+    background-color: #161616;
+    border-radius: 30px;
+    width: 1321px;
+    height: 646px;
+}
+
+.header-section {
+    display: flex;
+}
+
+.header-text {
+    margin: 9% 17% 11% 10%;
+}
+
+.header-image {
+    margin-top: 6.5%;
+    margin-right: 8%;
+    width: 50%;
+}
+
+.header-image img {
+    width: 533px;
+}
+
+.title {
+    color: white;
+    font-size: 3em;
+}
+
+.description {
+    color: white;
+    opacity: 0.8;
+}
+
+.button {
+    text-decoration: none;
+    color: aliceblue;
+    background-color: crimson;
+    padding: 10px 15px;
+    border-radius: 5px;
+    box-shadow: inset 0 0 0 0 yellow;
+    transition: ease-in .5s;
+    outline: none;
+}
+
+.button:hover {
+    box-shadow: inset 200px 0 0 0 yellow;
+    cursor: pointer;
+    color: black;
+}
+
+/* Menu Section */
+
+.container2 {
+    margin-top: 13%;
+    display: flex;
+}
+
+.menu-section {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #161616;
+    border-radius: 10px;
+    width: 312px;
+    height: 312px;
+    padding-top: 2%;
+}
+
+.menu-section div {
+    padding: 10%;
+}
+
+.menu-button {
+    text-decoration: none;
+    font-size: 1.5em;
+    color: black;
+    background-color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    box-shadow: inset 0 0 0 0 crimson;
+    transition: ease-in .5s;
+    outline: none;
+}
+
+.menu-button:hover {
+    box-shadow: inset 250px 0 0 0 crimson;
+    cursor: pointer;
+    color: white;
+}
+
+.one {
+    padding: 5% 15%;
+}
+
+.two {
+    padding: 5% 30%;
+}
+
+.three {
+    padding: 5% 40%;
+}
+
+/* Blog Section */
+.blog-section {
+    margin-left: 2.4%;
+}
+
+.all-blog {
+    display: grid;
+    gap: 24px;
+    grid-template-columns: repeat(3, 1fr);
+    padding-bottom: 13%;
+}
+
+.single-blog {
+    width: 312px;
+    height: 362px;
+    border: 2px solid rgba(128, 128, 128, 0.09);
+    border-radius: 15px;
+}
+
+.details {
+    padding-left: 5%;
+}
+
+.details a {
+    text-decoration: none;
+    color: #161616;
+    border: 2px solid #161616;
+    border-radius: 5px;
+    padding: 1% 5%;
+}
+
+.icon {
+    display: flex;
+}
+
+.clock,
+.chat {
+    padding-right: 15px;
+}
+
+/* Footer Section */
+
+footer {
+    background-color: #161616;
+}
+
+footer h1 {
+    color: white;
+    font-size: 250%;
+    text-align: center;
+    padding-top: 10%;
+}
+
+hr {
+    margin: 1% 14%;
+    opacity: 0.1;
+}
+
+footer div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+footer span {
+    padding: 3%;
+    color: #B9B9B9;
+}
+
+.fa-brands {
+    color: white;
+    font-size: xx-large;
+    padding: 0 3% 2% 3%;
 }

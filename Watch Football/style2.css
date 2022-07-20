@@ -1,3 +1,6 @@
+/*-------------- 
+Body section
+----------------*/
 body {
     font-family: 'Roboto Condensed', sans-serif;
     margin: 0;
@@ -7,7 +10,9 @@ body {
     margin: 5% 15%;
 }
 
-/* Header Section */
+/*-------------- 
+Header Section 
+----------------*/
 .container1 {
     background-color: #161616;
     border-radius: 30px;
@@ -60,7 +65,48 @@ body {
     color: black;
 }
 
-/* Menu Section */
+/*-----------------
+ Button Animation
+ ------------------*/
+.animation {
+    text-decoration: none;
+    color: aliceblue;
+    border: 2px solid crimson;
+    padding: 10px 15px;
+    border-radius: 5px;
+    position: relative;
+    z-index: 1;
+}
+
+.animation:hover {
+    cursor: pointer;
+    color: white;
+}
+
+.animation::before {
+    transition: 0.5s all ease;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    opacity: 0;
+    content: "";
+    background-color: crimson;
+}
+
+.animation:hover::before {
+    transition: 0.5s all ease;
+    left: 0;
+    right: 0;
+    opacity: 1;
+    z-index: -1;
+}
+
+
+/*------------
+ Menu Section 
+ -------------*/
 
 .container2 {
     margin-top: 13%;
@@ -120,7 +166,9 @@ body {
     color: black;
 }
 
-/* Blog Section */
+/*---------------
+ Blog Section 
+ ----------------*/
 .details {
     text-align: center;
 }
@@ -153,7 +201,9 @@ body {
     padding-top: 25%;
 }
 
-/* Footer Section */
+/*--------------
+ Footer Section 
+ ---------------*/
 
 footer {
     background-color: #161616;
@@ -194,10 +244,14 @@ Media Queries
 --------------*/
 
 
-/* Mobile devices */
+/*--------------
+ Mobile devices 
+ ---------------*/
 @media only screen and (max-width: 668px) {
 
-    /* Header Section */
+    /*--------------
+     Header Section 
+     ---------------*/
     .main-body {
         margin: 2%;
     }
@@ -225,11 +279,13 @@ Media Queries
 
     .header-image img {
         margin: 0;
-        width: 123%;
+        width: 120.5%;
         padding-left: 50%;
     }
 
-    /* Menu and Blog Section */
+    /*------------------------
+     Menu and Blog Section 
+     -------------------------*/
     .menu-section,
     .container2 {
         flex-direction: column;
@@ -245,7 +301,9 @@ Media Queries
 
     }
 
-    /* Footer Section */
+    /*---------------
+     Footer Section 
+     ----------------*/
     .text {
         flex-direction: column;
         align-items: center;
@@ -256,10 +314,14 @@ Media Queries
     }
 }
 
-/* Tablet devices */
+/*-----------------
+ Tablet devices
+ ------------------*/
 @media only screen and (min-width: 669px) and (max-width: 992px) {
 
-    /* Header Section */
+    /*----------------
+    Header Section 
+    ------------------*/
     .main-body {
         margin: 5%;
     }
@@ -288,7 +350,9 @@ Media Queries
         width: 280%;
     }
 
-    /* Menu Button */
+    /*------------ 
+    Menu Button 
+    --------------*/
     .menu-section {
         height: 100%;
         width: 100%;
@@ -298,12 +362,13 @@ Media Queries
 
     }
 
-
     .menu-button {
         display: inline-block;
     }
 
-    /* Blog Section */
+    /*-------------
+     Blog Section 
+     --------------*/
     .container2 {
         width: 100%;
         flex-direction: column;
@@ -313,16 +378,9 @@ Media Queries
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .hide {
-        display: none;
-    }
-
-    /* Special Button */
-    .special {
-        visibility: visible;
-    }
-
-    /* Footer Section */
+    /*-----------------
+     Footer Section 
+     ------------------*/
     .text span {
         padding: 2%;
     }

@@ -87,7 +87,6 @@ body {
     font-size: 1.5em;
     color: black;
     background-color: white;
-    padding: 10px 15px;
     border-radius: 5px;
     box-shadow: inset 0 0 0 0 crimson;
     transition: ease-in .5s;
@@ -160,6 +159,13 @@ body {
     padding-right: 15px;
 }
 
+/* Special Button */
+.special {
+    padding-left: 45%;
+    padding-bottom: 10%;
+    visibility: hidden;
+}
+
 /* Footer Section */
 
 footer {
@@ -204,6 +210,10 @@ Media Queries
 @media only screen and (max-width: 668px) {
 
     /* Header Section */
+    .main-body {
+        margin: 2%;
+    }
+
     .container1 {
         width: 100%;
     }
@@ -218,6 +228,7 @@ Media Queries
         display: flex;
         flex-direction: column;
         text-align: center;
+        padding-left: 13%;
     }
 
     .title {
@@ -226,15 +237,15 @@ Media Queries
 
     .header-image img {
         margin: 0;
-        width: 120%;
-        padding-top: 3.2%;
-        padding-left: 45%;
+        width: 133%;
+        padding-left: 50%;
     }
 
     /* Menu and Blog Section */
     .menu-section,
     .container2 {
         flex-direction: column;
+        padding-left: 5%;
     }
 
     .menu-section {
@@ -243,6 +254,7 @@ Media Queries
 
     .all-blog {
         grid-template-columns: repeat(1, 1fr);
+
     }
 
     /* Footer Section */
@@ -257,19 +269,76 @@ Media Queries
 }
 
 /* Tablet devices */
-/* @media only screen and (min-width: 669px) and (max-width: 992px) {
-    .container {
+@media only screen and (min-width: 669px) and (max-width: 992px) {
+
+    /* Header Section */
+    .main-body {
+        margin: 5%;
+    }
+
+    .container1 {
         width: 100%;
     }
 
-    .player,
-    .blog {
+    .header-section {
+        width: 734px;
+        height: 398px;
+    }
+
+    .header-text {
+        margin: 0;
+        padding-left: 5%;
+        padding-top: 15%;
+    }
+
+    .header-image {
+        padding-right: 28%;
+        padding-top: 29.5%;
+    }
+
+    .header-image img {
+        width: 250%;
+    }
+
+    /* Menu Button */
+    .menu-section {
+        height: 100%;
+        width: 100%;
+        flex-direction: row;
+        background-color: white;
+        margin-top: -13%;
+    }
+
+
+    .menu-button {
+        display: inline-block;
+    }
+
+    /* Blog Section */
+    .container2 {
+        width: 100%;
         flex-direction: column;
     }
 
-    .players,
-    .blocks,
-    .arekta {
+    .all-blog {
         grid-template-columns: repeat(2, 1fr);
     }
-} */
+
+    .hide {
+        display: none;
+    }
+
+    /* Special Button */
+    .special {
+        visibility: visible;
+    }
+
+    /* Footer Section */
+    .text span {
+        padding: 2%;
+    }
+
+    .fa-brands {
+        font-size: medium;
+    }
+}

@@ -187,3 +187,147 @@ footer span {
     font-size: xx-large;
     padding: 0 3% 2% 3%;
 }
+
+
+/*-------------
+Media Queries 
+--------------*/
+
+
+/* Mobile devices */
+@media only screen and (max-width: 668px) {
+
+    /* Header Section */
+    .main-body {
+        margin: 2%;
+    }
+
+    .container1 {
+        width: 100%;
+    }
+
+    .header-section {
+        width: 334px;
+        height: 472px;
+        flex-direction: column;
+    }
+
+    .header-text {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-left: 13%;
+    }
+
+    .title {
+        font-size: 2em;
+    }
+
+    .header-image img {
+        margin: 0;
+        width: 123%;
+        padding-left: 50%;
+    }
+
+    /* Menu and Blog Section */
+    .menu-section,
+    .container2 {
+        flex-direction: column;
+        padding-left: 5%;
+    }
+
+    .menu-section {
+        background-color: white;
+    }
+
+    .all-blog {
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+    /* Footer Section */
+    .text {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .fa-brands {
+        font-size: medium;
+    }
+}
+
+/* Tablet devices */
+@media only screen and (min-width: 669px) and (max-width: 992px) {
+
+    /* Header Section */
+    .main-body {
+        margin: 5%;
+    }
+
+    .container1 {
+        width: 100%;
+    }
+
+    .header-section {
+        width: 734px;
+        height: 398px;
+    }
+
+    .header-text {
+        margin: 0;
+        padding-left: 5%;
+        padding-top: 15%;
+    }
+
+    .header-image {
+        padding-right: 30%;
+        padding-top: 33%;
+    }
+
+    .header-image img {
+        width: 280%;
+    }
+
+    /* Menu Button */
+    .menu-section {
+        height: 100%;
+        width: 100%;
+        flex-direction: row;
+        background-color: white;
+        margin-top: -13%;
+
+    }
+
+
+    .menu-button {
+        display: inline-block;
+    }
+
+    /* Blog Section */
+    .container2 {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .all-blog {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hide {
+        display: none;
+    }
+
+    /* Special Button */
+    .special {
+        visibility: visible;
+    }
+
+    /* Footer Section */
+    .text span {
+        padding: 2%;
+    }
+
+    .fa-brands {
+        font-size: medium;
+    }
+}
